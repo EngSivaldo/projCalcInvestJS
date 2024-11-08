@@ -9,9 +9,19 @@
   <body class="h-dvh grid gap-1 grid-cols-3 grid-rows-2 border-slate-700	bg-gray-300 	"  >
     <aside class="row-span-2	bg-sky-500	flex flex-col justify-between py-5 px-2">
       <h1 class="bg-red-700 text-white text-2xl	font-bold	px-6">App Calcuadora de Investimentos</h1>
-      <form action="">
-         <h1>formulario</h1>
-      </form>
+      <form class="w-full">   <!--Inicio formulario rentabilidade--> 
+        <div class="flex w-full flex-col"> 
+          <label for="return-rate">Rentabilidade</label>
+          <div class="flex">
+            <input class="w-1/6" type="text" value="%" disabled>
+            <input class="w-1/2" type="text" id="return-rate">
+            <select name="" id="evaluation-period">
+              <option value="monthly">Mensal</option>
+              <option value="yearly">Anual</option>
+            </select>
+          </div>
+        </div>
+      </form>  <!--fim form rentabilid-->
       <div>
         <button>Calcular</button>
         <button>Calcular</button>
